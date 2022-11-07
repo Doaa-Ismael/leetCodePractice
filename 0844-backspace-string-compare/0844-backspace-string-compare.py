@@ -16,6 +16,6 @@ class Solution:
                 continue;
             else:
                 t_stack.append(c)
-        return ''.join(s_stack) == ''.join(t_stack)
+        return s_stack == t_stack
                 
     
