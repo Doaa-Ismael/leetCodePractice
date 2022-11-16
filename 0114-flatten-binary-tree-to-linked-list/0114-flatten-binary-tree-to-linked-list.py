@@ -6,25 +6,20 @@
 #         self.right = right
 class Solution:
     def flatten(self, root: Optional[TreeNode]) -> None:
-        if not root: return 
+        if not root:
+            return 
         
-        preorder = []
-        self.preordertraverse(root, preorder)
-        n = len(preorder)
-        for i in range(0, n - 1):
-            preorder[i].right = preorder[i+1]
-            preorder[i].left = None
+        self.flatten(root.right)
+        self.flatten(root.left)
+        left = root.left
+        right = root.right
+        root.left = None
+        root.right = left
         
-        return preorder[0]
+        leave = root
+        while leave.right:
+            leave = leave.right
         
+        leave.right = right
         
-    
-    def preordertraverse(self, root: Optional[TreeNode], preorder: List[TreeNode]) -> None:
-        
-        if not root: return
-        
-        preorder.append(root)
-        self.preordertraverse(root.left, preorder)
-        self.preordertraverse(root.right, preorder)
-
         
