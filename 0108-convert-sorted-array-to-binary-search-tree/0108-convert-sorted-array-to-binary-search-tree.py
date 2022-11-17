@@ -12,14 +12,13 @@ class Solution:
     def recursivelyBuildBTS(self, nums, l, r):
         if l > r:
             return
-        
         mid = l + (r-l) // 2
-        newNode = TreeNode(nums[mid])
-
-        newNode.left = self.recursivelyBuildBTS(nums, l, mid-1)
-        newNode.right = self.recursivelyBuildBTS(nums, mid+1, r)
         
-        return newNode
+        return TreeNode(
+            nums[mid], 
+            self.recursivelyBuildBTS(nums, l, mid-1), 
+            self.recursivelyBuildBTS(nums, mid+1, r)
+        )
         
         
         
