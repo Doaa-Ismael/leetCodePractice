@@ -5,23 +5,23 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    
+    def __init__(self):
+        self.diff = 100000000
+        self.prev = None
+    
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
-        inorderdfs = []
-        self.helper(root, inorderdfs)
-        ans = 10000000
-        for i in range(0, len(inorderdfs) - 1 ):
-            ans = min(ans,abs(inorderdfs[i] - inorderdfs[i+1]))
-            
-        return ans
-        
-        
-    def helper(self, root, inorderdfs):
+        self.dfs(root)
+        return self.diff
+    
+    def dfs(self, root):
         if not root:
             return
-        self.helper(root.left, inorderdfs)
-        inorderdfs.append(root.val)
-        self.helper(root.right, inorderdfs)
-
         
+        self.dfs(root.left)
+        if self.prev is not None:
+            self.diff = min(self.diff, root.val - self.prev)
+        self.prev = root.val
+        self.dfs(root.right)  
         
         
