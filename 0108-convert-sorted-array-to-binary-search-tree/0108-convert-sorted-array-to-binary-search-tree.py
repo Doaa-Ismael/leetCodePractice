@@ -6,26 +6,20 @@
 #         self.right = right
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
-        rootParent = TreeNode(-1000000)
-        self.recursivelyBuildBTS(nums, rootParent, 0, len(nums) - 1)
-        return (rootParent.left or rootParent.right)
+        return self.recursivelyBuildBTS(nums, 0, len(nums) - 1)
         
         
-    def recursivelyBuildBTS(self, nums, root, l, r):
+    def recursivelyBuildBTS(self, nums, l, r):
         if l > r:
             return
         
         mid = l + (r-l) // 2
-        val = nums[mid]
-        newNode = TreeNode(val)
-        if root.val < val:
-            root.right = newNode
-        else:
-            root.left = newNode
+        newNode = TreeNode(nums[mid])
 
-        self.recursivelyBuildBTS(nums, newNode, l, mid-1)
-        self.recursivelyBuildBTS(nums, newNode, mid+1, r)
+        newNode.left = self.recursivelyBuildBTS(nums, l, mid-1)
+        newNode.right = self.recursivelyBuildBTS(nums, mid+1, r)
         
+        return newNode
         
         
         
