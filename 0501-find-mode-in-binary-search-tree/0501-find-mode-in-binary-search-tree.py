@@ -5,20 +5,33 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def findMode(self, root: Optional[TreeNode]) -> List[int]:
-        count = {}
-        self.countNumbers(root, count)
-        modeVal = max(count.values())
-        return [num for (num, c) in count.items() if c == modeVal]
+    def __init__(self):
+        self.prev = None
+        self.curCount = 1
+        self.ans = []
+        self.maxCount = -10000000
     
-        
-        
-        
-    def countNumbers(self, root: Optional[TreeNode], count):
-        if not root:
+    def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        self.helper(root)
+        return self.ans
+    
+         
+    def helper(self, root):
+        if not root: 
             return
         
-        count[root.val] = count.get(root.val, 0) + 1
-        self.countNumbers(root.left, count)
-        self.countNumbers(root.right, count)
+        self.helper(root.left)
         
+        self.curCount = self.curCount + 1 if root.val == self.prev else 1
+        
+        if self.maxCount == self.curCount:
+            self.ans.append(root.val)
+        
+        if self.maxCount < self.curCount:
+            self.maxCount = self.curCount
+            self.ans = [root.val]
+
+        self.prev = root.val  
+        self.helper(root.right)
+
+    
