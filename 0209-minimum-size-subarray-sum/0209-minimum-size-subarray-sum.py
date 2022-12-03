@@ -3,18 +3,12 @@ class Solution:
         l, r, n, ans = 0, 0, len(nums), inf
         curSum = 0
         
-        while True:
-            if curSum >= target:
-                if l >= n: break
+        for r in range(0, len(nums)):
+            curSum += nums[r]
+            while curSum >= target:
+                ans = min(ans, r-l+1)
                 curSum -= nums[l]
                 l += 1
-                r = r if r >=l else l
-            else:
-                if r >= n: break
-                curSum += nums[r]
-                r += 1
-            if curSum >= target:
-                ans = min(ans, r-l)
      
             
         return ans if ans != inf else 0
