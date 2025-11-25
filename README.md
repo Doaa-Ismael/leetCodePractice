@@ -14,9 +14,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0020-valid-parentheses) |
 | [0567-permutation-in-string](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0567-permutation-in-string) |
 ## Sliding Window
 |  |
 | ------- |
 | [0567-permutation-in-string](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0567-permutation-in-string) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
