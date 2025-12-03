@@ -18,28 +18,16 @@ var evalRPN = function(tokens) {
         "/": true
     }
     
-    let i = tokens.length - 1
-    while(true && i >= 0) {
+    for (let i = 0; i < tokens.length; i++) {
         if(operators[tokens[i]]) {
-            stack.push(tokens[i])
+            const num1 = stack.pop()
+            const num2 = stack.pop()
+            const newNum = calc(num2, num1, tokens[i])
+            stack.push(newNum)
         }
-        else {
-            if(operators[stack[stack.length - 1]])
-                stack.push(tokens[i])
-
-            else {
-                console.log(stack)
-                res = Number(tokens[i])
-                while(stack.length >= 2 && !operators[stack[stack.length - 1]]) {
-                    const num = stack.pop()
-                    const operator = stack.pop()
-                    res = calc(res, Number(num), operator)
-                }
-                console.log({res, stack: [...stack]})
-                stack.push(res)
-            }
+        else  {
+            stack.push(Number(tokens[i]))
         }
-        i--
     }
     return stack.pop()
 };
