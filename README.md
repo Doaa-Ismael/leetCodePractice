@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0238-product-of-array-except-self](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0238-product-of-array-except-self) |
 | [0739-daily-temperatures](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0739-daily-temperatures) |
 ## Math
 |  |
@@ -44,4 +45,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0739-daily-temperatures](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0739-daily-temperatures) |
+## Prefix Sum
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0238-product-of-array-except-self) |
 <!---LeetCode Topics End-->
