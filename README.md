@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0128-longest-consecutive-sequence) |
 | [0567-permutation-in-string](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0567-permutation-in-string) |
 ## Two Pointers
 |  |
@@ -34,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0128-longest-consecutive-sequence) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0238-product-of-array-except-self](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0238-product-of-array-except-self) |
 | [0739-daily-temperatures](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0739-daily-temperatures) |
@@ -49,4 +51,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0238-product-of-array-except-self) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
