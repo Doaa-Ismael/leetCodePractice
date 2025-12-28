@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0069-sqrtx](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0069-sqrtx) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0150-evaluate-reverse-polish-notation) |
 ## Monotonic Stack
 |  |
@@ -66,5 +67,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0069-sqrtx](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0069-sqrtx) |
 | [0704-binary-search](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0704-binary-search) |
 <!---LeetCode Topics End-->
