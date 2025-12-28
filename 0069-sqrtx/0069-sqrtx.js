@@ -7,7 +7,6 @@ var mySqrt = function(x) {
     if(x == 1 || x === 0) return x
     while(l <= r) {
         let mid =  Math.floor((l+r) / 2)
-        console.log({mid, l, r})
         if (mid*mid == x) return mid
         else if (mid*mid < x && ((mid+1) * (mid + 1)) > x ) return mid
         else if (mid*mid > x) r = mid - 1
