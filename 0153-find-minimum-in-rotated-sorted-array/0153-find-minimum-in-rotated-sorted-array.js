@@ -10,10 +10,7 @@ var findMin = function(nums) {
         if (nums[mid] < nums[r]) {
             r = mid
         }
-        else if(nums[mid] > nums[l]) {
-            l = mid + 1
-        }
-        else if (nums[mid] > nums[r]) {
+        else {
             l = mid + 1
         }
 
@@ -26,9 +23,9 @@ var findMin = function(nums) {
         // else if (nums[mid] < nums[r]) {
         //     r = mid
         // }
-        else {
-            break
-        }
+        // else {
+        //     break
+        // }
     }
     const mid = l + Math.floor((r - l) / 2)
     return nums[mid]
