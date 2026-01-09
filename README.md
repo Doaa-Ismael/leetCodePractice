@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0128-longest-consecutive-sequence) |
+| [0560-subarray-sum-equals-k](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0567-permutation-in-string) |
 | [0981-time-based-key-value-store](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0981-time-based-key-value-store) |
 ## Two Pointers
@@ -45,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0150-evaluate-reverse-polish-notation](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0238-product-of-array-except-self](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0238-product-of-array-except-self) |
+| [0560-subarray-sum-equals-k](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0560-subarray-sum-equals-k) |
 | [0704-binary-search](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0853-car-fleet) |
@@ -63,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0238-product-of-array-except-self) |
+| [0560-subarray-sum-equals-k](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0560-subarray-sum-equals-k) |
 ## Union Find
 |  |
 | ------- |
