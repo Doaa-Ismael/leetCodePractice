@@ -11,8 +11,7 @@
  */
 var reverseList = function(head) {
     if(!head) return null
-    let prev = head, cur = head.next
-    head.next = null
+    let prev = null, cur = head, next = null
     while(cur != null) {
         const nextNode = cur.next
         cur.next = prev
