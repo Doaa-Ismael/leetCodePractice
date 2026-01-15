@@ -11,11 +11,11 @@
  * @return {boolean}
  */
 var hasCycle = function(head) {
-    let currnet = head
-    while(currnet !== null) {
-        if(currnet.visited) return true
-        currnet.visited = true
-        currnet = currnet.next
+    let slow = head, fast = head
+    while(fast && fast.next) {
+        slow = slow.next
+        fast = fast.next.next
+        if(slow === fast) return true
     }
     return false
     
