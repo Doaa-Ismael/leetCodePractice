@@ -10,33 +10,22 @@
  * @return {void} Do not return anything, modify head in-place instead.
  */
 var reorderList = function(head) {
-    if(!head) return 
-    let slow = head, fast = head.next
-    while(fast && fast.next) {
-        slow = slow.next
-        fast = fast.next.next
-    }
-    let secondHalf = slow.next
-    slow.next = null
-
-    // Revese the second half
-    let prev = null, cur = secondHalf
+    const arr = []
+    let cur = head
     while(cur) {
-        const temp = cur.next
-        cur.next = prev
-        prev = cur
-        cur = temp
+        arr.push(cur)
+        cur = cur.next
     }
-    secondHalf = prev
-
-    // Join
-    cur = head
-    while(cur !== null && secondHalf !== null) {
-        let temp1 = cur.next
-        cur.next = secondHalf
-        secondHalf = secondHalf.next
-        cur.next.next = temp1
-        cur = temp1
+    let i = 0, j = arr.length - 1
+    cur = {}
+    while( i <= j) {
+        cur.next = arr[i]
+        cur.next.next = null
+        if(i == j) return 
+        i++
+        cur.next.next = arr[j]
+        cur = cur.next.next
+        cur.next = null
+        j--
     }
-
 };
