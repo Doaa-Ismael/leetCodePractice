@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0143-reorder-list) |
 | [0567-permutation-in-string](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0567-permutation-in-string) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 ## String
 |  |
 | ------- |
@@ -110,6 +111,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/0206-reverse-linked-list) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Doaa-Ismael/leetCodePractice/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 ## Recursion
 |  |
 | ------- |
